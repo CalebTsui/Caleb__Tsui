@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caleb Tsui - Portfolio</title>
+
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+
+        <h1 id="myHeader">
+            <a href="index.html" class="logo">
+                <span class="logo-img">
+                    <img src="images/icon.png" alt="Logo" class="logo-icon default">
+                    <img src="images/icon2.png" alt="Logo Hover" class="logo-icon hover">
+                </span>
+                Caleb Tsui
+            </a>
+        </h1>
+
+        <!-- Nav bar -->
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-expanded="false">
+                Menu
+                <span class="chevron">▾</span>
+            </button>
+
+            <div class="nav-links">
+                <a href="index.html#myWork">Works</a>
+                <a href="sandbox.html">Sandbox</a>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing" class="resume mobile-only">View Resumé</a>
+    </div>
+            </div>
+        </nav>
+
+        <div class="resume-wrapper">
+            <a class="resume" href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing">View Resumé</a>
+        </div>
+
+        <!-- Nav bar -->
+
+    </header>
+
+    <!-- Intro section -->
+    <section class="intro">
+        
+        <div class="intro-left">
+            <h2> 
+                Hi there, the name is <span class="highlight">Caleb</span>!
+            </h2>
+            <h2>
+                A Digital Designer who blends strategy and creativity to simplify challenges and drive action. Designing for <span class="highlight">clarity, impact, and a little delight</span>.</h2>
+            <p class="note">
+                Previously Digitial Design Specialist @ Fraser Health Authority & learning how to design @ SFU SIAT
+            </p>
+        </div>
+
+        
+        <!-- Intro Image -->
+        <div class="intro-right">
+            <img class="introImg" src="images/IntroImg.png" alt="A polaroid of me in Whistler">
+        </div>
+
+    </section>
+
+
+    <!-- Selected works -->
+    <section class="selected-work" id="myWork">
+        <div class="cards">
+
+            <!-- Card 3 -->
+            <article class="card">
+                <a href="caseit.html" class="thumb-link" aria-label="Goodreads project">
+                    <div class="thumb">
+                        <img src="images/fraserhealth_cover.png" alt="Visualizations thumbnail">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <h3>Fraser Health Authority</h3>
+                    <p>100+ design requests delivered in 8 months, aligned with established visual and brand guidelines.</p>
+                    <div class="tags"><span>Illustraion</span><span>Marketing Design</span><span>Visual Design</span></div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <a href="caseit.html" class="thumb-link" aria-label="Goodreads project">
+                    <div class="thumb">
+                        <img src="images/caseitcover.png" alt="Visualizations thumbnail">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <h3>CaseIT 2025</h3>
+                    <p>Spearheaded the CaseIT 2025’s branding and oversaw the design of all marketing collateral.</p>
+                    <div class="tags"><span>Project Management</span><span>Design Lead</span><span>Creative Strategy</span></div>
+                </div>
+            </article>
+
+
+            <!-- Card 1 -->
+            <article class="card">
+                <a href="va.html" class="thumb-link" aria-label="Goodreads project">
+                    <div class="thumb">
+                        <img src="images/VA_Img.png" alt="Cover Image for Vancouver Aquarium Project">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <h3>Vancouver Aquarium</h3>
+                    <p>Designing experiences that elevate the guest journey and reinforce Vancouver Aquarium’s educational mission.</p>
+                    <div class="tags"><span>B2C UX</span><span>Product Design</span><span>UX Research</span></div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <a href="goodreads.html" class="thumb-link" aria-label="Goodreads project">
+                    <div class="thumb">
+                        <img src="images/Goodreads_Img.png" alt="Visualizations thumbnail">
+                    </div>
+                </a>
+                <div class="card-body">
+                    <h3>Goodreads Community Interface Redesign</h3>
+                    <p>Refining Goodreads’ community feature through user research to better support reader engagement.</p>
+                    <div class="tags"><span>UX/UI Design</span><span>Product Design</span><span>User Research</span></div>
+                </div>
+            </article>
+        </div>
+    </section> 
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        navToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('open');
+
+            // Optional: toggle aria-expanded for accessibility
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
+
+</body>
+
+  <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-inner">
+        <!-- Left group -->
+        <div class="footer-left-group">
+            <div class="footer-left">
+                <h4>Thank you for stalking me! 🧑🏻‍💻</h4>
+                <p>Currently, you can find me designing in PST zone.</p>
+            </div>
+            <p class="footer-credit">Designed & coded from scratch, by me.</p>
+        </div>
+
+        <!-- Right group -->
+        <div class="footer-right-group">
+            <!-- Middle -->
+            <div class="footer-middle">
+                <h5>Let’s chat!</h5>
+                <ul>
+                    <li>Send me an <a href="mailto:calebtsui0314@email.com">Email</a></li>
+                    <li>Connect me on <a href="www.linkedin.com/in/caleb-tsui">LinkedIn</a></li>
+                    <li>Check out my <a href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing">Resumé</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right -->
+            <div class="footer-right">
+                <a href="index.html"><h5>Home</h5></a>
+                <ul>
+                    <li><a href="index.html#myWork">Works</a></li>
+                    <li><a href="sandbox.html">Sandbox</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © Caleb Tsui 2025
+    </div>
+</footer>
+
+
+</html>

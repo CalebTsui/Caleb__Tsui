@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Caleb Tsui - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+
+        <h1 id="myHeader">
+            <a href="index.html" class="logo">
+                <span class="logo-img">
+                    <img src="images/icon.png" alt="Logo" class="logo-icon default">
+                    <img src="images/icon2.png" alt="Logo Hover" class="logo-icon hover">
+                </span>
+                Caleb Tsui
+            </a>
+        </h1>
+
+        <!-- Nav bar -->
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-expanded="false">
+                Menu
+                <span class="chevron">▾</span>
+            </button>
+
+            <div class="nav-links">
+                <a href="index.html#myWork">Works</a>
+                <a href="sandbox.html">Sandbox</a>
+                <a href="about.html">About</a>
+                <a href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing" class="resume mobile-only">View Resumé</a>
+    </div>
+            </div>
+        </nav>
+
+        <div class="resume-wrapper">
+            <a class="resume" href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing">View Resumé</a>
+        </div>
+
+        <!-- Nav bar -->
+
+    </header>
+
+    <section id="about" class="about">
+
+        <div class="about-page">
+
+            <div class="about-icon">
+                <img src="images/about/aboutme.png">
+            </div>
+
+            <h2>Welcome to my Internet Corner 🍵</h2>
+            <p>The name is Caleb. I am a human-first (imperfect and always learning) UX/UI & Product designer who studies the <span class="highlight">interactions between humans and systems</span> to craft <span class="highlight">meaningful experiences</span> that align with user and business goals.</p>
+
+            <p>My design process is centred around people and <span class="highlight">how their needs fit within larger systems</span>. I am a designer and problem solver who strives to break down complex challenges, drive action through purpose-driven design, and -yes- make things pretty.</p>
+
+            <p>When I am not online, you will find me taking my neighbourhood walks, finding new bites and cafés, or planning my next trip on a 14-page Google doc (currently planning my upcoming Europe trip)! </p>
+
+            <p>Let’s 👋🏻 💬 🤩 🧠 🍽️ ☕️ on <a href="www.linkedin.com/in/caleb-tsui">LinkedIn</a> or <a href="mailto:calebtsui0314@email.com">email</a>.</p>
+
+            <p class="note">Currently seeking for Summer & Fall 2026 opportunities...Maybe you could be the one to make that happen?</p>
+
+        </div>
+
+        <div class="about-page">
+            <h2>Education</h2>
+            <div class="education-div">
+                <div class="detail-div">
+                    <h3>Simon Fraser University </h3>
+                    <p>2021-present</p>
+                </div>
+
+                <div class="group">
+                    <h3 class="note">B.Sc. Interactive Arts and Technology</h3>
+                    <p>Concentration: Interaction Design, AI & Data Science for Human-centred Systems</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="about-page">
+            <h2>Experience</h2>
+            <div class="education-div">
+                <div class="detail-div">
+                    <h3>Multidisciplinary Designer</h3>
+                    <p>Nov 2025-present</p>
+                </div>
+
+                <div class="group">
+                    <h3 class="note">Simon Fraser University, Touchpoint Conference 2026</h3>
+                    <p>Invited by the SIAT Faculty and Conference Managers</p>
+                </div>
+
+            </div>
+
+
+            <div class="education-div">
+                <div class="detail-div">
+                    <h3>Product Designer & UX Researcher</h3>
+                    <p>Sept 2025- Dec 2025</p>
+                </div>
+
+                <h3 class="note">Vancouver Aquarium</h3>
+            </div>
+
+
+            <div class="education-div">
+                <div class="detail-div">
+                    <h3>Digital Design Communications Specialist</h3>
+                    <p>Jan 2025- Sept 2025</p>
+                </div>
+
+                <h3 class="note">Fraser health Authority</h3>
+            </div>
+
+
+            <div class="education-div">
+                <div class="detail-div">
+                    <h3>Director of Design</h3>
+                    <p>July 2024- Jun 2025</p>
+                </div>
+
+                <h3 class="note">SFU Beedie, CaseIT International Case Competition 2025</h3>
+            </div>
+
+
+            <div class="education-div">
+                <div class="detail-div">
+                    <h3>UI Designer</h3>
+                    <p>July 2024- Jun 2025</p>
+                </div>
+
+                <h3 class="note">SFU Enactus & Unify by Enactus</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mainNav = document.querySelector('.main-nav');
+
+        navToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('open');
+
+            // Optional: toggle aria-expanded for accessibility
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+            navToggle.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
+
+
+
+    </body>
+    
+    <!-- Footer -->
+   <footer class="site-footer">
+    <div class="footer-inner">
+        <!-- Left group -->
+        <div class="footer-left-group">
+            <div class="footer-left">
+                <h4>Thank you for stalking me! 🧑🏻‍💻</h4>
+                <p>Currently, you can find me designing in PST zone.</p>
+            </div>
+            <p class="footer-credit">Designed & coded from scratch, by me.</p>
+        </div>
+
+        <!-- Right group -->
+        <div class="footer-right-group">
+            <!-- Middle -->
+            <div class="footer-middle">
+                <h5>Let’s chat!</h5>
+                <ul>
+                    <li>Send me an <a href="mailto:calebtsui0314@email.com">Email</a></li>
+                    <li>Connect me on <a href="www.linkedin.com/in/caleb-tsui">LinkedIn</a></li>
+                    <li>Check out my <a href="https://drive.google.com/file/d/1yN6VeaxeyW_jLO-s8KyuzVLXs5rSGoTw/view?usp=sharing">Resumé</a></li>
+                </ul>
+            </div>
+            
+            <!-- Right -->
+            <div class="footer-right">
+                <h5>Home</h5>
+                <ul>
+                    <li><a href="index.html#myWork">Works</a></li>
+                    <li><a href="sandbox.html">Sandbox</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © Caleb Tsui 2025
+    </div>
+</footer>
+
+
+</html>
