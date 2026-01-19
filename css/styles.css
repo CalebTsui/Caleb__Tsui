@@ -718,6 +718,15 @@ nav a:focus,
     display: block;
 }
 
+.background .fraserhealth {
+    width: 100%;
+    height: auto;
+    border-radius: 0rem;
+    border: 2px solid #F2F2F2;
+    margin-bottom: 3rem;
+
+}
+
 /* VA - Content */
 .background .tags {
     display: flex;
